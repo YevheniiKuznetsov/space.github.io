@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="Опис в поісковику..." />
+    <meta name="keywords" content="Ключові слова поска" />
+    <title>
+      Amir Capital - инвестиционный холдинг, экосистема, "супермаркет" доходных
+      товаров и услуг на блокчейн
+    </title>
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org//face/hack?_v=20230406211223"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300;400;700&family=Exo+2:wght@300;400;700&display=swap&_v=20230406211223"
+      rel="stylesheet"
+    />
+    <link
+      rel="manifest"
+      href="/app.webmanifest"
+      crossorigin="use-credentials"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Russo+One&_v=20230406211223"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css?_v=20230406211223" />
+
+    <style>
+      body {
+        background: #000;
+        min-height: 100vh;
+      }
+
+      .preloader-container {
+        position: fixed;
+        display: none;
+        display: block;
+        width: 100vw;
+        height: 100%;
+        top: 0;
+        height: 0;
+        z-index: 999;
+        background: #000;
+      }
+
+      .preloader-1 {
+        width: 66px;
+        height: 12px;
+      }
+
+      .preloader-2 {
+        margin: 120px auto 0;
+      }
+
+      .preloader-container div {
+        color: #fff;
+        margin: 5px 0;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: "Arial", sans-serif;
+        font-size: 10px;
+        letter-spacing: 2px;
+      }
+
+      .preloader-1 .line {
+        width: 1px;
+        height: 12px;
+        background: #fff;
+        margin: 0 1px;
+        display: inline-block;
+        animation: opacity-1 1000ms infinite ease-in-out;
+      }
+
+      .preloader-2 .line {
+        width: 1px;
+        height: 12px;
+        background: #fff;
+        margin: 0 1px;
+        display: inline-block;
+        animation: opacity-2 1000ms infinite ease-in-out;
+      }
+
+      .preloader-1 .line-1,
+      .preloader-2 .line-1 {
+        animation-delay: 800ms;
+      }
+
+      .preloader-1 .line-2,
+      .preloader-2 .line-2 {
+        animation-delay: 600ms;
+      }
+
+      .preloader-1 .line-3,
+      .preloader-2 .line-3 {
+        animation-delay: 400ms;
+      }
+
+      .preloader-1 .line-4,
+      .preloader-2 .line-4 {
+        animation-delay: 200ms;
+      }
+
+      .preloader-1 .line-6,
+      .preloader-2 .line-6 {
+        animation-delay: 200ms;
+      }
+
+      .preloader-1 .line-7,
+      .preloader-2 .line-7 {
+        animation-delay: 400ms;
+      }
+
+      .preloader-1 .line-8,
+      .preloader-2 .line-8 {
+        animation-delay: 600ms;
+      }
+
+      .preloader-1 .line-9,
+      .preloader-2 .line-9 {
+        animation-delay: 800ms;
+      }
+
+      @keyframes opacity-1 {
+        0% {
+          opacity: 1;
+        }
+
+        50% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes opacity-2 {
+        0% {
+          opacity: 1;
+          height: 15px;
+        }
+
+        50% {
+          opacity: 0;
+          height: 12px;
+        }
+
+        100% {
+          opacity: 1;
+          height: 15px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box-up active"></div>
+
+    <div class="navigation__close cursor-pointer">
+      <div class="navigation__close-line"></div>
+      <div class="navigation__close-line"></div>
+      <div class="navigation__close-line"></div>
+    </div>
+
+    <nav class="navigation">
+      <div class="navigation__wrapper">
+        <h2 class="navigation__title">Amir Capital</h2>
+        <ul class="menu-list">
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__item-link"> Amir planet #1 </a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__item-link"> Amir planet #2 </a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__item-link"> Amir planet #3 </a>
+          </li>
+        </ul>
+
+        <div class="navigation__galactic">
+          <a
+            class="navigation__galactic-item redirect-btns"
+            href="page-wallet.html"
+            >Amir Wallet</a
+          >
+          <a
+            class="navigation__galactic-item redirect-btns"
+            href="page-finance.html"
+            >Amir Finance</a
+          >
+          <a
+            class="navigation__galactic-item redirect-btns"
+            href="page-chain.html"
+            >Sollar Chain</a
+          >
+          <a
+            class="navigation__galactic-item redirect-btns"
+            href="page-space.html"
+            >Sollar Space</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="scroll-container">
+      <div class="speacker-text-info">
+        <p class="desctop-device">Click anywhere to enable the sound</p>
+        <p class="touch-device">Tap anywhere to enable the sound</p>
+      </div>
+
+      <div id="custom_cursor"></div>
+
+      <div class="animation-main-container">
+        <div style="height: 100vh; display: none" class="preloader-container">
+          <div class="data"></div>
+          <div class="preloader-1">
+            <div>Loading</div>
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+            <span class="line line-4"></span>
+            <span class="line line-5"></span>
+            <span class="line line-6"></span>
+            <span class="line line-7"></span>
+            <span class="line line-8"></span>
+            <span class="line line-9"></span>
+          </div>
+        </div>
+
+        <div class="scroll-info info">
+          <div class="scrolldown">
+            <div class="chevrons">
+              <div class="chevrondown"></div>
+              <div class="chevrondown"></div>
+            </div>
+          </div>
+          <div>Scroll down</div>
+        </div>
+
+        <div class="swipe-info info">
+          <img src="./img/scroll-info-cursor.svg" alt="" />
+        </div>
+
+        <div class="text-discription-container">
+          <div class="section-item-description" direction="top">
+            <svg class="main-title" viewBox="0 0 1320 300">
+              <text x="50%" y="50%" dy=".65em" text-anchor="middle">
+                Amir Capital Еcosystem
+              </text>
+            </svg>
+            <svg class="subtitle" viewBox="0 0 1320 300">
+              <text x="50%" y="50%" dy=".65em" text-anchor="middle">
+                Еcosystem
+              </text>
+            </svg>
+          </div>
+          <div class="section-item-description" direction="top"></div>
+
+          <div
+            class="section-item-description section-item-description-left"
+            direction="left"
+          >
+            <div class="section-item-description__top">
+              <img src="./img/star.svg" alt="star icon" />
+            </div>
+            <div class="section-item-description__bottom">
+              <img src="./img/description-left.svg" alt="description image" />
+              <div class="section-item-description__bottom-text">
+                <div class="title-container">
+                  <!-- <img src="./img/logo/amir-wallet-logo.svg" alt="button image" /> -->
+                  <h2>Amir Capital</h2>
+                </div>
+                <div class="text-container">
+                  <p class="writing-animation">
+                    инвестиционный холдинг, экосистема, "супермаркет" доходных
+                    товаров и услуг на блокчейн
+                  </p>
+                </div>
+              </div>
+              <div class="link-button-container">
+                <a class="main-button cursor-pointer" href="page-2.html"
+                  >Подробнее</a
+                ><a class="main-button main-button-close cursor-pointer"
+                  >Назад</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="section-item-description section-item-description-right"
+            direction="right"
+          >
+            <div class="section-item-description__top">
+              <img src="./img/star.svg" alt="star icon" />
+            </div>
+            <div class="section-item-description__bottom">
+              <img src="./img/description-right.svg" alt="description image" />
+              <div class="section-item-description__bottom-text">
+                <div class="title-container">
+                  <!-- <img src="./img/logo/smir-invest-logo.svg" alt="button image" /> -->
+                  <h2>Amir Finance</h2>
+                </div>
+                <div class="text-container">
+                  <p class="writing-animation">
+                    управляющая компания, объединяет средства физических и
+                    юридических лиц, приобретает на них криптоактивы и
+                    приумножает их.
+                  </p>
+                </div>
+              </div>
+              <div class="link-button-container">
+                <a
+                  class="main-button cursor-pointer redirect-btns"
+                  href="page-finance.html"
+                  >Подробнее</a
+                ><a class="main-button main-button-close cursor-pointer"
+                  >Назад</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="section-item-description section-item-description-left"
+            direction="left"
+          >
+            <div class="section-item-description__top">
+              <img src="./img/star.svg" alt="star icon" />
+            </div>
+            <div class="section-item-description__bottom">
+              <img src="./img/description-left.svg" alt="description image" />
+              <div class="section-item-description__bottom-text">
+                <div class="title-container">
+                  <h2>Sollar Space</h2>
+                </div>
+                <div class="text-container">
+                  <p class="writing-animation">
+                    <span
+                      >сообщество осознанных инвесторов экосистемы Amir
+                      Capital</span
+                    >
+                    <!-- <span class="bold-text">“Купи и держи”</span> -->
+                  </p>
+                </div>
+              </div>
+              <div class="link-button-container">
+                <a
+                  class="main-button cursor-pointer redirect-btns"
+                  href="page-space.html"
+                  >Подробнее</a
+                ><a class="main-button main-button-close cursor-pointer"
+                  >Назад</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="section-item-description section-item-description-left"
+            direction="left"
+          >
+            <div class="section-item-description__top">
+              <img src="./img/star.svg" alt="star icon" />
+            </div>
+            <div class="section-item-description__bottom">
+              <img src="./img/description-left.svg" alt="description image" />
+              <div class="section-item-description__bottom-text">
+                <div class="title-container">
+                  <!-- <img src="./img/logo/amir-wallet-logo.svg" alt="button image" /> -->
+                  <h2>Sollar Chain</h2>
+                </div>
+                <div class="text-container">
+                  <p class="writing-animation">
+                    Универсальна блокчейн-платформа. Безопасность: Sollar - это
+                    анонимная блокчейн-платформа, все данные конфиденциальны.
+                    Доступность: Сервисы доступны всегда и везде, независимо от
+                    внешнеэкономических и политических факторов, и влияния 3-х
+                    лиц.
+                  </p>
+                </div>
+              </div>
+              <div class="link-button-container">
+                <a
+                  class="main-button cursor-pointer redirect-btns"
+                  href="page-finance.html"
+                  >Подробнее</a
+                ><a class="main-button main-button-close cursor-pointer"
+                  >Назад</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="speaker-button cursor-pointer">
+          <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+          <svg
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:cc="http://web.resource.org/cc/"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:svg="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"
+            xml:space="preserve"
+            version="1.0"
+            id="layer1"
+            width="20pt"
+            height="20pt"
+            viewBox="0 0 75 75"
+          >
+            <metadata id="metadata1">
+              <rdf:RDF>
+                <cc:Work rdf:about="">
+                  <dc:format>image/svg+xml</dc:format>
+                  <dc:type
+                    rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+                  />
+                </cc:Work>
+              </rdf:RDF>
+            </metadata>
+            <g id="g1">
+              <polygon
+                id="polygon1"
+                points="39.389,13.769 22.235,28.606 6,28.606 6,47.699 21.989,47.699 39.389,62.75 39.389,13.769"
+                style="
+                  stroke: #fff;
+                  stroke-width: 5;
+                  stroke-linejoin: round;
+                  fill: #fff;
+                "
+              />
+              <path
+                id="path1"
+                d="M 48.128,49.03 C 50.057,45.934 51.19,42.291 51.19,38.377 C 51.19,34.399 50.026,30.703 48.043,27.577"
+                style="
+                  fill: none;
+                  stroke: #fff;
+                  stroke-width: 5;
+                  stroke-linecap: round;
+                "
+              />
+              <path
+                id="path2"
+                d="M 55.082,20.537 C 58.777,25.523 60.966,31.694 60.966,38.377 C 60.966,44.998 58.815,51.115 55.178,56.076"
+                style="
+                  fill: none;
+                  stroke: #fff;
+                  stroke-width: 5;
+                  stroke-linecap: round;
+                "
+              />
+              <path
+                id="path3"
+                d="M 61.71,62.611 C 66.977,55.945 70.128,47.531 70.128,38.378 C 70.128,29.161 66.936,20.696 61.609,14.01"
+                style="
+                  fill: none;
+                  stroke: #fff;
+                  stroke-width: 5;
+                  stroke-linecap: round;
+                "
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="page-pagination"></div>
+        <canvas class="texture"></canvas>
+        <div class="main-container"></div>
+      </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@barba/core?_v=20230406211223"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js?_v=20230406211223"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js?_v=20230406211223"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollToPlugin.min.js?_v=20230406211223"></script>
+    <script src="js/app.min.js?_v=20230406211223"></script>
+  </body>
+</html>
